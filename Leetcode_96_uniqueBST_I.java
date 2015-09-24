@@ -19,7 +19,7 @@ public class Solution {
         if (n>0) nums[1]=1;
         for (int i = 2 ; i< n+1; i++) {
         	for (int j = 0 ; j< i ; j++) {
-        		nums[i] += num[j] * num[i-j-1];
+        		nums[i] += nums[j] * nums[i-j-1];
         	}
         }
       return nums[n];
